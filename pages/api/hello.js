@@ -12,6 +12,7 @@ export default function handler(req, res) {
     //const user = findbyemail()
     //user.wallet.balance == 
     console.log(ob)
+    console.log(req.body)
     return res.status(200).json(ob)
   }
   if(req.body.event === "paymentrequest.pending"){
